@@ -1,29 +1,44 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "liopun.github.io",
+  "version": "1.0.0",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Captone Habiyaremye's personal portfolio website",
+  "main": "n/a",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-offline": "^3.0.19",
     "gatsby-plugin-react-helmet": "^3.1.14",
+    "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-plugin-sharp": "^2.2.37",
+    "gatsby-plugin-sitemap": "^2.2.20",
+    "gatsby-plugin-styled-components": "^3.1.12",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.36",
+    "gatsby-transformer-json": "^2.2.17",
     "gatsby-transformer-sharp": "^2.3.3",
+    "idx": "^2.5.6",
+    "lodash.assign": "^4.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-responsive-carousel": "^3.1.51",
+    "styled-components": "^4.4.1",
+    "styled-reset": "^4.0.6",
+    "url-loader": "^2.2.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "react",
+    "gatsby",
+    "portfolio"
   ],
+  "author": "Captone Habiyaremye <hcaptone@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
