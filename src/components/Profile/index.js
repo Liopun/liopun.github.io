@@ -22,7 +22,7 @@ export default ({ data }) => {
             <>
               <p>I am currently a third year engineering student at Ontario Tech University. Over the last 4+ years, I have worked with startups and small-size companies based in Rwanda.
               I focus primarily on building exceptional, high-quality interfaces that are usable and scalable.{' '}
-              <a href="https://github.com/hcaptone" target="_blank" rel="noopener noreferrer">I enjoy experimenting, building and trying out new tools.</a>
+              <a href="https://github.com/hcaptone" target="_blank" rel="noopener noreferrer">I enjoy experimenting and developing with new tools.</a>
               </p>
             </>
           }
