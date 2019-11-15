@@ -1,21 +1,45 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, useStaticQuery, graphql, buildSchema } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import ProfileContent from '../components/Profile'
+import { META } from '../utils/constants'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const profileQuery = graphql`
+  query profileQuery {
+    clients: allClientsJson {
+      edges {
+        client: node {
+          name
+        }
+      }
+    }
+    events: allEventsJson {
+      edges {
+        event: node {
+          year
+          position
+          company
+        }
+      }
+    }
+    mentions: allMentionsJson {
+      edges {
+        mention: node {
+          name
+          url
+        }
+      }
+    }
+  }
+`
 
-export default IndexPage
+export default ({ location }) =>
+  <StaticQuery
+    query={profileQuery}
+    render={data =>
+      <Layout location={location}>
+        <ProfileContent data={data}/>
+      </Layout>
+    }
+  />

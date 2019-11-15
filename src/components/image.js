@@ -1,7 +1,3 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
  * images with lazy loading and reduced file sizes. The image is loaded using a
@@ -12,21 +8,51 @@ import Img from "gatsby-image"
  * - `gatsby-image`: https://gatsby.dev/gatsby-image
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
+ import React, { Component } from 'react'
+ import { string, arrayOf, shape, func } from 'prop-types'
 
-const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+ class Image extends Component {
+   state = { isLoaded: false }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+   renderSource(source, i) {
+     const { media, srcset } = source
+     return media
+       ? <source key={i} media={`(${media})`} srcSet={srcset.join(', ')} />
+       : <source key={i} srcSet={srcset.join(', ')} />
+   }
 
-export default Image
+   setLoaded() {
+     this.setState({ isLoaded: true })
+   }
+
+   render() {
+     const { src, alt, sources, className, loader } = this.props
+     const { isLoaded } = this.state
+     return (
+         <picture className={className}>
+           {loader && loader({ isLoaded })}
+           {sources && sources.map(this.renderSource)}
+           <img onLoad={() => this.setLoaded()} src={src} alt={alt} />
+         </picture>
+     )
+   }
+ }
+
+ Image.propTypes = {
+   src: string.isRequired,
+   alt: string,
+   sources: arrayOf(shape({
+     media: string,
+     srcset: arrayOf(string).isRequired
+   })),
+   className: string,
+   loader: func.isRequired
+ }
+
+ Image.defaultProps = {
+   alt: '',
+   sources: { media: null },
+   className: null
+ }
+
+ export default Image
