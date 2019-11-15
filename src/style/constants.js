@@ -1,11 +1,11 @@
 import { css } from 'styled-components'
 
 export const colors = {
-  blue900: '#1e2733',
+  blue900: '#252731',
   gray500: '#94989E',
   gray700: '#656a73',
-  yellow500: '#EBC86E',
-  yellow700: '#6b6349'
+  yellow500: '#a1815c',
+  yellow700: '#a1815c'
 }
 
 export const fonts = {

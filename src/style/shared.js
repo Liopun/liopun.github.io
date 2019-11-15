@@ -9,13 +9,13 @@ export const ContentWrapper = styled.div`
     margin: 8rem auto 3rem;
     width: calc(100% - 11rem * 2);
   `}
-  
+
   ${media.md`
     width: 100%;
     margin: 4rem auto 0;
     padding: 0 3rem 6rem;
   `}
-  
+
   ${media.sm`
     margin: 2rem auto 0;
     padding: 0 2rem 6rem;
@@ -36,9 +36,9 @@ export const Loader = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #1b242f;
+  background: #303340;
   z-index: 2;
-  ${props => props.isLoaded 
+  ${props => props.isLoaded
   ? css`
     transform: scale(1.05);
     opacity: 0;
