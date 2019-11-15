@@ -51,8 +51,8 @@ export default ({ location }) =>
   <Layout location={location}>
     <Wrapper>
       <header>
-        <Title>Oops, sorry!</Title>
-        <Subtitle>This page cannot be found.</Subtitle>
+        <Title>404 </Title>
+        <Subtitle>Oops, sorry! This page cannot be found.</Subtitle>
         <BackToHome to='/'>Go to index</BackToHome>
       </header>
     </Wrapper>

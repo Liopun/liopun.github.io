@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Image from '../Image'
+import Image from '../image'
 import { colors, media } from '../../style/constants'
 
 export const Wrapper = styled.section`

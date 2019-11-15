@@ -2,7 +2,7 @@ export const LAMBDA_ENDPOINT = 'https://kvz60gz535.execute-api.us-east-1.amazona
 export const IS_PROD = process.env.NODE_ENV === 'production'
 export const META = {
   common: {
-    image: '/images/michele-mazzucco-meta-image.jpg',
+    image: '../../images/michele-mazzucco-meta-image.jpg',
   },
   index: {
     title: 'Captone Habiyaremye | Front-end developer',
@@ -10,6 +10,6 @@ export const META = {
   },
   profile: {
     title: 'Captone Habiyaremye | Profile',
-    description: 'Over the last 3+ years, I have been working with startups and small-size companies.'
+    description: 'Over the last 4+ years, I have been working with startups and small-size companies.'
   }
 }
