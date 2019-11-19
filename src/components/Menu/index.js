@@ -6,7 +6,7 @@ const Menu = () =>
   <Wrapper>
     <Nav>
       <NavItem>
-        <a href="https://github.com/hcaptone" rel="noopener noreferrer" target="_blank">Github</a>
+        <a href="https://github.com/liopun" rel="noopener noreferrer" target="_blank">Github</a>
       </NavItem>
       <NavItem>
         <a href="https://www.instagram.com/hcaptone" rel="noopener noreferrer" target="_blank">Instagram</a>

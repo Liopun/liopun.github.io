@@ -6,7 +6,7 @@ export const META = {
   },
   index: {
     title: 'Captone Habiyaremye | Front-end developer',
-    description: 'Captone Habiyaremye, web developer based in Ontario, Canada. I am currently a third year engineering student at Ontario Tech University. I have a passion for front end developmnent, I focus primarily on building exceptional, high-quality interfaces that are usable and scalable.'
+    description: 'Captone Habiyaremye, web developer based in Ontario, Canada. I am currently a third year engineering student at Ontario Tech University. I have a passion for front-end development, I focus primarily on building exceptional, high-quality interfaces that are usable and scalable.'
   },
   profile: {
     title: 'Captone Habiyaremye | Profile',
