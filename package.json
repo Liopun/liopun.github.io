@@ -37,12 +37,18 @@
   "keywords": [
     "react",
     "gatsby",
-    "portfolio"
+    "portfolio",
+    "liopun",
+    "graphQL"
   ],
   "author": "Captone Habiyaremye <hcaptone@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "lint:css": "stylelint './src/**/*.js'",
+    "lint:js": "eslint './src/**/*.js'",
+    "precommit": "npm run lint:css && npm run lint:js",
+    "gzip": "gzip -r public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
