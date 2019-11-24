@@ -9,6 +9,9 @@ const Logo = () =>
       <Link to='/'><CLogo width={25} height={25} /></Link>
       <div className="circle" />
     </div>
+    <div className="resume">
+      <Link to='/'>RESUME</Link>
+    </div>
   </Wrapper>
 
 export default Logo

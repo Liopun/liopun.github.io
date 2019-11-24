@@ -9,7 +9,7 @@ import { ContentWrapper } from '../../style/shared'
 import { ListsSection, ClientsList } from './style'
 
 export default ({ data }) => {
-  const { clients, events, mentions, articles } = data
+  const { clients, events, mentions, langs } = data
 
   return (
       <ContentWrapper>
@@ -28,6 +28,16 @@ export default ({ data }) => {
           }
         />
         <ListsSection>
+          {langs.edges.length > 0 &&
+            <ClientsList
+              title="Technologies I have worked with"
+              list={() => langs.edges.map(({ lang }, i) => (
+                <ProfileListItem
+                  key={i}
+                  {...lang}
+                />
+              ))}
+            />}
           {events.edges.length > 0 &&
             <ProfileList
               title='Timeline'
@@ -50,7 +60,7 @@ export default ({ data }) => {
             />}
           {clients.edges.length > 0 &&
             <ClientsList
-              title='Companies I have worked with'
+              title="Where I have worked"
               list={() => clients.edges.map(({ client }, i) => (
                 <ProfileListItem
                   key={i}

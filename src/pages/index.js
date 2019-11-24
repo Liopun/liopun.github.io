@@ -31,6 +31,13 @@ const profileQuery = graphql`
         }
       }
     }
+    langs: allLangsJson {
+      edges {
+        lang: node {
+          name
+        }
+      }
+    }
   }
 `
 

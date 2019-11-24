@@ -53,11 +53,8 @@ export const Wrapper = styled.div`
   }
   .logo {
     float: left;
-    padding-right: 39px;
-    right: 0 !important;
   }
   .resume {
     float: right;
-    margin-top: 9.09px;
   }
 `
