@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, StaticQuery, useStaticQuery, graphql, buildSchema } from "gatsby"
+import { StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import ProfileContent from '../components/Profile'
@@ -47,7 +47,7 @@ export default ({ location }) =>
     query={profileQuery}
     render={data =>
       <Layout location={location}>
-        <Head 
+        <Head
           {...META.index}
           image={META.common.image}
         />

@@ -10,21 +10,21 @@ const ProfileIntroSection = ({ content }) =>
       <Content>{content()}</Content>
     </InfoWrapper>
     <StyledImage
-      src="../../images/profile/captone-portrait.jpg"
+      src="/images/captone-meta-image.jpg"
       alt="Captone Habiyaremye - Front-end Developer"
       loader={({ isLoaded }) => <Loader isLoaded={isLoaded} />}
       sources={[{
         media: 'max-width: 40rem',
         srcset: [
-          '../../images/profile/captone-portrait-square.jpg 1x',
-          '../../images/profile/captone-portrait-square-2x.jpg 2x',
-          '../../images/profile/captone-portrait-square-3x.jpg 3x'
+          '/images/captone-meta-image.jpg 1x',
+          '/images/captone-meta-image.jpg 2x',
+          '/images/captone-meta-image.jpg 3x'
         ]
       },{
         srcset: [
-          '../../images/profile/captone-portrait.jpg 1x',
-          '../../images/profile/captone-portrait-2x.jpg 2x',
-          '../../images/profile/captone-portrait-3x.jpg 3x'
+          '/images/captone-meta-image.jpg 1x',
+          '/images/captone-meta-image.jpg 2x',
+          '/images/captone-meta-image.jpg 3x'
         ]
       }]}
     />
