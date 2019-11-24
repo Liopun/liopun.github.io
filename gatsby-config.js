@@ -37,8 +37,8 @@ module.exports = {
         name: `Captone Habiyaremye`,
         short_name: `hcaptone`,
         start_url: `/`,
-        background_color: `##252731`,
-        theme_color: `##252731`,
+        background_color: `#252731`,
+        theme_color: `#252731`,
         display: `minimal-ui`,
         icon: `./src/assets/favicon.png`, // This path is relative to the root of the site.
       },

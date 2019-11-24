@@ -10,21 +10,21 @@ const ProfileIntroSection = ({ content }) =>
       <Content>{content()}</Content>
     </InfoWrapper>
     <StyledImage
-      src="../../images/profile/michele-mazzucco-portrait.jpg"
+      src="../../images/profile/captone-portrait.jpg"
       alt="Captone Habiyaremye - Front-end Developer"
       loader={({ isLoaded }) => <Loader isLoaded={isLoaded} />}
       sources={[{
         media: 'max-width: 40rem',
         srcset: [
-          '../../images/profile/michele-mazzucco-portrait-square.jpg 1x',
-          '../../images/profile/michele-mazzucco-portrait-square-2x.jpg 2x',
-          '../../images/profile/michele-mazzucco-portrait-square-3x.jpg 3x'
+          '../../images/profile/captone-portrait-square.jpg 1x',
+          '../../images/profile/captone-portrait-square-2x.jpg 2x',
+          '../../images/profile/captone-portrait-square-3x.jpg 3x'
         ]
       },{
         srcset: [
-          '../../images/profile/michele-mazzucco-portrait.jpg 1x',
-          '../../images/profile/michele-mazzucco-portrait-2x.jpg 2x',
-          '../../images/profile/michele-mazzucco-portrait-3x.jpg 3x'
+          '../../images/profile/captone-portrait.jpg 1x',
+          '../../images/profile/captone-portrait-2x.jpg 2x',
+          '../../images/profile/captone-portrait-3x.jpg 3x'
         ]
       }]}
     />

@@ -3,6 +3,7 @@ import { Link, StaticQuery, useStaticQuery, graphql, buildSchema } from "gatsby"
 
 import Layout from "../components/layout"
 import ProfileContent from '../components/Profile'
+import Head from '../components/header'
 import { META } from '../utils/constants'
 
 const profileQuery = graphql`
@@ -46,6 +47,10 @@ export default ({ location }) =>
     query={profileQuery}
     render={data =>
       <Layout location={location}>
+        <Head 
+          {...META.index}
+          image={META.common.image}
+        />
         <ProfileContent data={data}/>
       </Layout>
     }
