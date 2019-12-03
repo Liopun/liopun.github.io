@@ -4,7 +4,8 @@ module.exports = {
     title: `Liopun`,
     description: `Captone Habiyaremye's personal portfolio website`,
     author: `@liopun`,
-    siteUrl: 'https://liopun.github.io/'
+    siteUrl: `https://liopun.github.io`,
+    image: `./src/assets/favicon.png`
   },
   plugins: [
     {
@@ -18,7 +19,7 @@ module.exports = {
     resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: [`Roboto:300,400`, `Roboto Mono`]
+          families: ['Roboto:300,400', 'Roboto Mono']
         }
       }
     },
