@@ -2,7 +2,7 @@ import React from 'react'
 import ProfileIntroSection from '../ProfileIntroSection'
 import ProfileListItem from '../ProfileListItem'
 import EventListItem from '../EventListItem'
-import Head from '../header'
+import SEO from '../seo'
 import ProfileList from '../ProfileList'
 import { META } from '../../utils/constants'
 import { ContentWrapper } from '../../style/shared'
@@ -13,7 +13,7 @@ export default ({ data }) => {
 
   return (
       <ContentWrapper>
-        <Head
+        <SEO
           {...META.profile}
           image={META.common.image}
         />

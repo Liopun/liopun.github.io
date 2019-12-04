@@ -1,11 +1,16 @@
+const siteUrl = process.env.URL || process.env.DEPLOY_URL || `https://liopun.github.io`
 module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: `Liopun`,
-    description: `Captone Habiyaremye's personal portfolio website`,
+    description: `Captone Habiyaremye | Portfolio`,
     author: `@liopun`,
-    siteUrl: `https://liopun.github.io`,
-    image: `./src/assets/favicon.png`
+    siteUrl,
+    url: `https://liopun.github.io`,
+    image: `/images/captone-meta-image.png`,
+    social: {
+      twitter: `liopun`,
+    },
   },
   plugins: [
     {
@@ -24,13 +29,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `./src/images`,
-      },
-    },
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

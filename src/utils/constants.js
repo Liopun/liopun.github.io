@@ -2,7 +2,7 @@ export const LAMBDA_ENDPOINT = 'https://kvz60gz535.execute-api.us-east-1.amazona
 export const IS_PROD = process.env.NODE_ENV === 'production'
 export const META = {
   common: {
-    image: './images/captone-meta-image.jpg',
+    image: '/images/captone-meta-image.png',
   },
   index: {
     title: 'Captone Habiyaremye | Front-end developer',

@@ -12,6 +12,8 @@ const Head = ({ title, description, image }) =>
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="google-site-verification" content="QOtBaDcwTbAgUQHwDGPnn7HMQDx3NQF8IDci8wGzP20" />
   </Helmet>
 
 export default Head
