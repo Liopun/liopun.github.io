@@ -3,7 +3,7 @@ import { StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import ProfileContent from '../components/Profile'
-import Head from '../components/header'
+import SEO from '../components/seo'
 import { META } from '../utils/constants'
 
 const profileQuery = graphql`
@@ -47,7 +47,7 @@ export default ({ location }) =>
     query={profileQuery}
     render={data =>
       <Layout location={location}>
-        <Head
+        <SEO
           {...META.index}
           image={META.common.image}
         />

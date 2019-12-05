@@ -10,7 +10,7 @@ const Footer = () =>
     <Item position='right'>
       <span>LIOPUN&nbsp;|&nbsp;</span>
 
-      <a target="_blank" rel="noopener noreferrer" href='https://github.com/michelemazzucco/michelemazzucco.it'>+1 (905)922-8568</a>
+      <a target="_blank" rel="noopener noreferrer" href='tel:+19059228568'>+1 (905)922-8568</a>
     </Item>
   </Wrapper>
 
