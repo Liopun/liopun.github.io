@@ -109,14 +109,12 @@ SEO.defaultProps = {
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  image: PropTypes.object,
+  image: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   pathname: PropTypes.string,
   title: PropTypes.string.isRequired
 }
-
-export default SEO
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
@@ -133,3 +131,5 @@ const detailsQuery = graphql`
     }
   }
 `
+
+export default SEO
