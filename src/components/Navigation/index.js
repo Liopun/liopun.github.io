@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Logo from '../Logo'
+import Resume from '../Resume'
 import Footer from '../Footer'
 import Menu from '../Menu'
 import ToggleMenu from '../ToggleMenu'
@@ -30,6 +31,7 @@ class Navigation extends Component {
       <Wrapper>
         <Header>
           <Logo />
+          <Resume />
           <ToggleMenu
             open={open}
             onClick={this.toggleMenu}

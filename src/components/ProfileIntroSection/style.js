@@ -39,16 +39,11 @@ export const StyledImage = styled(Image)`
     bottom: -100%;
     left: -100%;
     mix-blend-mode: lighten;
+    opacity: .1;
     display: block;
     object-fit: cover;
     ${media.sm`
       opacity: .2;
-    `}
-    ${media.md`
-      opacity: .1;
-    `}
-    ${media.lg`
-      opacity: .1;
     `}
   }
 

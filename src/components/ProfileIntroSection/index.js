@@ -1,7 +1,5 @@
 import React from 'react'
 import Intro from '../Intro'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import { Wrapper, InfoWrapper, Content, StyledImage } from './style'
 import { Loader } from '../../style/shared'
 

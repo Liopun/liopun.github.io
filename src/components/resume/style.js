@@ -4,8 +4,9 @@ import { media, getOuterSpace } from '../../style/constants'
 export const Wrapper = styled.div`
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   max-width: 18rem;
+  /* padding: 5rem; */
   ${getOuterSpace('padding')}
   ${media.md`
     position: static;
@@ -32,29 +33,15 @@ export const Wrapper = styled.div`
     height: auto;
   }
 
-  .circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: rgba(255, 255, 255, .05);
-    height: 100%;
-    width: 100%;
-    border-radius: 100%;
-    pointer-events: none;
-    opacity: 1;
-    will-change: transform;
+  .resume {
+    /* position: absolute; */
+    /* top: 50%;*/
+    right: 100%;
   }
 
   a:hover + .circle {
     opacity: 0;
     transform: translate(-50%, -50%) scale(7.5);
     transition: transform 1s cubic-bezier(.45, 0, .1, 1), opacity .8s ease;
-  }
-  .logo {
-    float: left;
-  }
-  .resume {
-    float: right;
   }
 `

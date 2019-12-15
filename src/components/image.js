@@ -23,13 +23,11 @@
 
    setLoaded() {
      this.setState({ isLoaded: true })
-     console.log("TRIED TO BE SET TO true", this.state);
    }
 
    render() {
      const { src, alt, sources, className, loader } = this.props
      const { isLoaded } = this.state
-     console.warn("Bandz", isLoaded);
      return (
          <picture className={className}>
            {loader && loader({ isLoaded })}
