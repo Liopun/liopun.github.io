@@ -4,7 +4,7 @@ import { Wrapper } from './style'
 const Logo = () =>
   <Wrapper>
     <div className="resume">
-      <a href="https://www.dropbox.com/s/yvuzqlttmr7i977/Captone%20-%20Frontend%20Developer.pdf?dl=0" rel="noopener noreferrer" target="_blank">RESUME</a>
+      <a href="https://www.dropbox.com/s/1jiybx0ttp24wri/Captone%20H%20-%20Fullstack%20-%20Resume.PDF?dl=0" rel="noopener noreferrer" target="_blank">RESUME</a>
     </div>
   </Wrapper>
 

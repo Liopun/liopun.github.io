@@ -1,15 +1,15 @@
 [{
-  "name": "HTML & CSS"
-},{
-  "name": "Bootstrap 4"
+  "name": "Web Markup (HTML5 & CSS3)"
 },{
   "name": "JavaScript (ES6+)"
+},{
+  "name": "Python3"
 },{
   "name": "Angular"
 },{
   "name": "TypeScript"
 },{
-  "name": "React"
+  "name": "Reactjs"
 },{
   "name": "Node.js"
 },{
@@ -17,9 +17,9 @@
 },{
   "name": "Gatsby"
 },{
-  "name": "PHP"
+  "name": "MongoDB"
 },{
   "name": "SQL"
 },{
-  "name": "Java"
+  "name": "Express.js"
 }]
