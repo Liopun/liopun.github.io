@@ -1,57 +1,135 @@
 import React from "react"
-import { StaticQuery } from "gatsby"
+import { StaticQuery, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import ProfileContent from '../components/Profile'
-import SEO from '../components/seo'
-import { META } from '../utils/constants'
+import Image from "../components/image"
+import SEO from "../components/seo"
+import { META } from "../utils/constants"
+import About from '../components/about'
+import Switch from '../components/switch'
+import Intro from "../components/intro"
+import Background from "../components/background"
+import Skills from "../components/skills"
+import Experience from "../components/experience"
+import Projects from "../components/projects"
+import Others from "../components/others"
 
-const profileQuery = graphql`
+export const profileQuery = graphql`
   query profileQuery {
-    clients: allClientsJson {
+    profiles: allProfilesJson {
       edges {
-        client: node {
+        node {
+          image
           name
+          title
         }
       }
     }
-    events: allEventsJson {
+    contacts: allContactsJson {
       edges {
-        event: node {
-          year
-          position
-          company
-        }
-      }
-    }
-    mentions: allMentionsJson {
-      edges {
-        mention: node {
-          name
+        node {
+          type
+          value
           url
+        }
+      }
+    }
+    tools: allToolsJson {
+      edges {
+        node {
+          name
+        }
+      }
+    }
+    frameworks: allFrameworksJson {
+      edges {
+        node {
+          name
         }
       }
     }
     langs: allLangsJson {
       edges {
-        lang: node {
+        node {
           name
+        }
+      }
+    }
+    methodologies: allMethodologiesJson {
+      edges {
+        node {
+          name
+        }
+      }
+    }
+    experiences: allExperiencesJson {
+      edges {
+        node {
+          company
+          position
+          time
+          url
+        }
+      }
+    }
+    features: allFeaturesJson {
+      edges {
+        node {
+          img
+          project
+          url
+          desc
+        }
+      }
+    }
+    others: allOthersJson {
+      edges {
+        node {
+          name
+          url
+          desc
+          used {
+            name
+          }
         }
       }
     }
   }
 `
 
-export default ({ location }) =>
-  <StaticQuery
-    query={profileQuery}
-    render={data =>
-      <Layout location={location}>
+const IndexPage = ({ data }) => {
+  const { profiles, contacts, tools, frameworks, langs, methodologies, experiences, features, others } = data
+
+  console.log("WES", data)
+
+  return (
+    <Layout>
         <SEO
           {...META.index}
           image={META.common.image}
         />
-        <ProfileContent data={data}/>
-      </Layout>
-    }
-  />
+        {profiles.edges.length > 0 && 
+          profiles.edges.map((profile, i) => (
+            <Intro profile={profile} data={contacts} />
+          ))}
+        <Background />
+        <Skills data={data} />
+        <Experience data={experiences} />
+        <Projects data={features} />
+        <Others data={others} />
+    </Layout>
+  )
+}
+  // <Layout>
+  //   <SEO title="Home" />
+  //   <h1>Hi people</h1>
+  //   <p>Welcome to your new Gatsby site.</p>
+  //   <p>Now go build something great.</p>
+  //   <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+  //     <Image />
+  //   </div>
+  //   <Link to="/page-2/">Go to page 2</Link> <br />
+  //   <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+  // </Layout>
+
+export default IndexPage

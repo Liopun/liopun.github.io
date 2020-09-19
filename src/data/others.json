@@ -1,0 +1,47 @@
+[{  
+    "name": "Django Dashboard",
+    "url": "https://github.com/Liopun/djashboard",
+    "desc": "An open-Source Admin Dashboard coded in Django Framework on top of Light Dashboard design (free version).",
+    "used": [
+        { "name": "Django" },
+        { "name": "Postgresql" },
+        { "name": "Heroku" }
+    ]
+},{
+    "name": "Hirepipe",
+    "url": "https://github.com/Liopun/hirepipe",
+    "desc": "A job recruitment platform that connects employers to employees.",
+    "used": [
+        { "name": "Ionic" },
+        { "name": "AngularJS" },
+        { "name": "Node.js" },
+        { "name": "Heroku" },
+        { "name": "Responsive Design" },
+        { "name": "Microservice Architecture" }
+    ]
+},{
+    "name": "MERN-front-2-back",
+    "url": "https://github.com/Liopun/MERN-front-2-back",
+    "desc": "A full-stack social network application.",
+    "used": [
+        { "name": "MongoDB" },
+        { "name": "Express" },
+        { "name": "React" },
+        { "name": "Redux" },
+        { "name": "Node.js" },
+        { "name": "Heroku" },
+        { "name": "Responsive Design" },
+        { "name": "Microservice Architecture" }
+    ]
+},{
+    "name": "React-currency",
+    "url": "https://github.com/Liopun/react-currency",
+    "desc": "A react web application to search a country and get several details regarding the country's currency.",
+    "used": [
+        { "name": "React" },
+        { "name": "React-router-dom" },
+        { "name": "Axios" },
+        { "name": "GitHub Pages" },
+        { "name": "Responsive Design" }
+    ]
+}]

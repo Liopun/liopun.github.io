@@ -1,0 +1,7 @@
+[
+    { "type": "email", "value": "hcaptone@gmail.com", "url": "mailto:hcaptone@gmail.com" },
+    { "type": "phone", "value": "(905)922-8568", "url": "tel:+19059228568" },
+    { "type": "location", "value": "ON, Canada", "url": "https://www.google.ca/maps/place/Oshawa,+ON/@43.9484591,-78.9483906,12z/data=!3m1!4b1!4m5!3m4!1s0x89d51d21ccd37533:0xdd8ceff2f844fcbf!8m2!3d43.8970929!4d-78.8657912" },
+    { "type": "linkedin", "value": "linkedin.com/in/hcaptone/", "url": "https://www.linkedin.com/in/hcaptone/" },
+    { "type": "github", "value": "github.com/Liopun", "url": "https://github.com/Liopun" } 
+]

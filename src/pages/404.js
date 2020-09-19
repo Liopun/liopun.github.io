@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 import Layout from '../components/layout'
-import { fonts, colors, media } from '../style/constants'
+import { fonts, colors, media } from '../styles/constants'
 
 const Title = styled.h1`
   font-size: 2.2rem;

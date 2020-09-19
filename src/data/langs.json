@@ -1,25 +1,11 @@
 [{
-  "name": "Web Markup (HTML5 & CSS3)"
+  "name": "HTML"
+},{
+  "name": "CSS/Sass"
 },{
   "name": "JavaScript (ES6+)"
 },{
   "name": "Python3"
 },{
-  "name": "Angular"
-},{
   "name": "TypeScript"
-},{
-  "name": "Reactjs"
-},{
-  "name": "Node.js"
-},{
-  "name": "GraphQL"
-},{
-  "name": "Gatsby"
-},{
-  "name": "MongoDB"
-},{
-  "name": "SQL"
-},{
-  "name": "Express.js"
 }]
