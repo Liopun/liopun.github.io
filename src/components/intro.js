@@ -1,16 +1,10 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload'
 import { CardWrapper, CardTitle, CardContent, ListContainer, ListItem } from "../styles/intro"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
 
 const Intro = ({ profile, data }) => {
-    const Loading = () => (
-        <div className="post loading">
-            <h5>.</h5>
-        </div>
-    )
     const iconMap = {
         email: faEnvelope,
         phone: faPhone,
@@ -38,12 +32,10 @@ const Intro = ({ profile, data }) => {
                     <ListContainer>
                         {contacts.edges.length > 0 && contacts.edges.map((item, i) => (
                             <ListItem key={i}>
-                                <LazyLoad key={i} placeholder={<Loading />}>
-                                    <FontAwesomeIcon icon={iconMap[item.node.type]} />
-                                    <a href={item.node.url} target='_blank' rel="noopener noreferrer">
-                                        {item.node.value}
-                                    </a>
-                                </LazyLoad>
+                                <FontAwesomeIcon icon={iconMap[item.node.type]} />
+                                <a href={item.node.url} target='_blank' rel="noopener noreferrer">
+                                    {item.node.value}
+                                </a>
                             </ListItem>
                         ))}
                     </ListContainer>
