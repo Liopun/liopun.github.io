@@ -14,5 +14,7 @@
     "name": "CircleCI"
 },{
     "name": "Heroku"
+}, {
+    "name": "Jira"
 }]
   
