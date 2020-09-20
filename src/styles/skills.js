@@ -45,9 +45,7 @@ export const SkillCategory = styled.div`
         margin-bottom: 25px;
     `}
 `
-export const SkillContent = styled.section`
-    width: 100%;
-`
+
 export const SkillList = styled(ProfileList)`
     
 `

@@ -105,7 +105,7 @@ const IndexPage = ({ data }) => {
         />
         {profiles.edges.length > 0 && 
           profiles.edges.map((profile, i) => (
-            <Intro profile={profile} data={contacts} />
+            <Intro key={i} profile={profile} data={contacts} />
           ))}
         <Background />
         <Skills data={data} />

@@ -5,14 +5,12 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import { ThemeProvider } from "styled-components"
 import { UseDarkMode } from "./useDarkMode"
 import { GlobalStyle } from "../styles/global"
 import { LightTheme, DarkTheme } from "./themes"
-import "../styles/layout.css"
 import PointingUp from "../assets/images/emojis/pointing-up.png"
 import Switch from "./switch"
 
@@ -32,7 +30,6 @@ const Layout = ({ children }) => {
       window.scrollTo(0, 0);
     }
     
-    // renders nothing, since nothing is needed
     return null;
   }
 

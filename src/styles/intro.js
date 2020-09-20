@@ -31,19 +31,6 @@ export const CardWrapper = styled.div`
       border-radius: 2px;
   `}
 `
-export const CardBody = styled.div`
-  padding-right: 32px;
-  padding-left: 32px;
-`
-export const Container = styled.div`
-  display: flex;
-  width: 100px;
-  height: 150px;
-  border: 3px solid ${props => props.color};
-  border-radius: 15px;
-  justify-content: space-around;
-  font-size: 5em;
-`
 export const CardTitle = styled.div`
     width: 300px;
     margin-right: 70px;
@@ -182,7 +169,4 @@ export const ListItem = styled.div`
       float: left;
       margin-left: 10px;
     `}
-`
-export const Content = styled.div`
-  align-self: center;
 `

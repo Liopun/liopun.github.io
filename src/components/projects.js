@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from "prop-types"
 import { SectionTitle, SectionContent } from "../styles/background"
 import { ProjectStyle, ProjectSection, ProjectFigure, FigCaption } from "../styles/projects"
 
@@ -11,7 +10,7 @@ const Projects = ({ data }) => {
             <SectionTitle>Featured Projects</SectionTitle>
             <SectionContent>
                 {projects.edges.length > 0 && projects.edges.map((project, i) => (
-                    <ProjectSection>
+                    <ProjectSection key={i}>
                         <ProjectFigure>
                             <a href={project.node.url} target="_blank" rel="noopener noreferrer">
                                 <img src={project.node.img} alt={project.node.project} />

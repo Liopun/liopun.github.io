@@ -1,5 +1,4 @@
-import React , { useEffect, useState }from 'react'
-import PropTypes, { func, string } from "prop-types"
+import React from 'react'
 import { SwitchWrapper, Sun, ToggleWrapper, Moon } from "../styles/switch"
 import { colors } from "../styles/constants"
 

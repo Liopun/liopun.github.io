@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from "prop-types"
 import { SectionTitle, SectionContent } from "../styles/background"
 import { ExperienceStyle, ExperienceSection, ExperienceJob, ExperienceItem } from "../styles/experience"
 

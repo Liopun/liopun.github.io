@@ -1,9 +1,8 @@
 import React from 'react'
-import PropTypes from "prop-types"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope, faPhone, faExclamation, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
-import { CardWrapper, CardTitle, CardContent, CardBody, Container, ListContainer, ListItem, Content } from "../styles/intro"
+import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
+import { CardWrapper, CardTitle, CardContent, ListContainer, ListItem } from "../styles/intro"
 
 const Intro = ({ profile, data }) => {
     const iconMap = {
@@ -21,7 +20,7 @@ const Intro = ({ profile, data }) => {
                 <CardTitle>
                     <div className="custom-file-upload fas">
                         <div className="img-wrap" >
-                            <img htmlFor="photo-upload" src={profile.node.image}/>
+                            <img htmlFor="photo-upload" src={profile.node.image} alt={profile.node.image} />
                         </div>
                         <div className="text-wrap">
                             <h1 className="profile-name">{profile.node.name}</h1>
@@ -32,7 +31,7 @@ const Intro = ({ profile, data }) => {
                 <CardContent>
                     <ListContainer>
                         {contacts.edges.length > 0 && contacts.edges.map((item, i) => (
-                            <ListItem>
+                            <ListItem key={i}>
                                 <FontAwesomeIcon icon={iconMap[item.node.type]} />
                                 <a href={item.node.url} target='_blank' rel="noopener noreferrer">
                                     {item.node.value}

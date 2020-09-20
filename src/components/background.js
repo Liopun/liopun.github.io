@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from "prop-types"
 import { SectionTitle, SectionContent, BackgroundStyle, BackgroundSection } from "../styles/background"
 
 const Background = () => {

@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from "prop-types"
 import { SectionTitle, SectionContent } from "../styles/background"
-import { SkillStyle, SkillSection, SkillCategory, SkillContent, SkillList } from "../styles/skills"
+import { SkillStyle, SkillSection, SkillCategory, SkillList } from "../styles/skills"
 import ProfileListItem from "./profileListItem"
 
 const Skills = ({ data }) => {
