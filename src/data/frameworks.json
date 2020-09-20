@@ -1,4 +1,6 @@
 [{
+    "name": "Apache Cordova"
+},{
     "name": "React"
 },{
     "name": "Redux"
@@ -10,7 +12,5 @@
     "name": "Gatsby"
 },{
     "name": "Ionic"
-}, {
-    "name": "Apache Cordova"
 }]
   
