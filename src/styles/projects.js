@@ -9,12 +9,12 @@ export const ProjectStyle = styled.section`
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 100px 100px 0px;
+    padding: 100px 50px 0px;
     a:after {
         display: none;
     }
     ${media.xl`
-        padding: 70px 70px 0px;
+        padding: 100px 50px 0px;
     `};
     ${media.lg`
         padding: 50px 50px 0px;
@@ -23,7 +23,7 @@ export const ProjectStyle = styled.section`
         display: block;
     `};
     ${media.sm`
-        padding: 50px 35px;
+        padding: 50px 35px 0px;
     `}
 `
 export const ProjectSection = styled.section`

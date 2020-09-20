@@ -2,11 +2,8 @@ import React from "react"
 import { StaticQuery, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import { META } from "../utils/constants"
-import About from '../components/about'
-import Switch from '../components/switch'
 import Intro from "../components/intro"
 import Background from "../components/background"
 import Skills from "../components/skills"
@@ -99,8 +96,6 @@ export const profileQuery = graphql`
 
 const IndexPage = ({ data }) => {
   const { profiles, contacts, tools, frameworks, langs, methodologies, experiences, features, others } = data
-
-  console.log("WES", data)
 
   return (
     <Layout>

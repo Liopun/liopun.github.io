@@ -9,12 +9,12 @@ export const OtherStyle = styled.section`
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 100px 100px;
+    padding: 100px 50px;
     ${media.xl`
-        padding: 70px;
+        padding: 100px 50px;
     `};
     ${media.lg`
-        padding: 50px;
+        padding: 50px 50px;
     `};
     ${media.md`
         display: block;

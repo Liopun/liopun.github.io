@@ -20,16 +20,6 @@ const Layout = ({ children }) => {
   const [theme, themeToggler] = UseDarkMode()
 
   const themeMode = theme === 'light' ? LightTheme : DarkTheme
-    
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   function scrollToTop () {
     try {

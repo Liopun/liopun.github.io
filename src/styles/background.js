@@ -54,9 +54,9 @@ export const BackgroundStyle = styled.section`
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 100px 100px 0px;
+    padding: 100px 50px 0px;
     ${media.xl`
-        padding: 70px 70px 0px;
+        padding: 100px 50px 0px;
     `};
     ${media.lg`
         padding: 50px 50px 0px;
@@ -65,6 +65,19 @@ export const BackgroundStyle = styled.section`
         display: block;
     `};
     ${media.sm`
-        padding: 50px 35px;
+        padding: 50px 35px 0px;
     `}
-`;
+`
+
+export const BackgroundSection = styled.section`
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    ${media.sm`
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    `}
+`

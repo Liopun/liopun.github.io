@@ -11,11 +11,17 @@ export const ExperienceStyle = styled.section`
     -ms-flex-pack: center;
     justify-content: center;
     padding: 0px 50px 50px;
+    ${media.xl`
+        padding: 0px 50px 50px;
+    `};
+    ${media.lg`
+        padding: 0px 50px 50px;
+    `};
     ${media.md`
         display: block;
     `};
     ${media.sm`
-        padding: 50px 35px;
+        padding: 50px 35px 50px;
     `}
 `
 
