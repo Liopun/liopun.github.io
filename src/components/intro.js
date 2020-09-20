@@ -8,7 +8,7 @@ import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg
 const Intro = ({ profile, data }) => {
     const Loading = () => (
         <div className="post loading">
-            <h5>Loading...</h5>
+            <h5>.</h5>
         </div>
     )
     const iconMap = {
