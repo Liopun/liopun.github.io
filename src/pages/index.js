@@ -1,6 +1,6 @@
 import React from "react"
 import { StaticQuery, Link } from "gatsby"
-
+import LazyLoad from 'react-lazyload'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { META } from "../utils/constants"
@@ -95,24 +95,31 @@ export const profileQuery = graphql`
 `
 
 const IndexPage = ({ data }) => {
+  const Loading = () => (
+    <div className="post loading">
+        <h1>...</h1>
+    </div>
+  )
   const { profiles, contacts, tools, frameworks, langs, methodologies, experiences, features, others } = data
 
   return (
-    <Layout>
-        <SEO
-          {...META.index}
-          image={META.common.image}
-        />
-        {profiles.edges.length > 0 && 
-          profiles.edges.map((profile, i) => (
-            <Intro key={i} profile={profile} data={contacts} />
-          ))}
-        <Background />
-        <Skills data={data} />
-        <Experience data={experiences} />
-        <Projects data={features} />
-        <Others data={others} />
-    </Layout>
+    <LazyLoad key="loadlazylayout" placeholder={<Loading />}>
+      <Layout>
+          <SEO
+            {...META.index}
+            image={META.common.image}
+          />
+          {profiles.edges.length > 0 && 
+            profiles.edges.map((profile, i) => (
+              <Intro key={i} profile={profile} data={contacts} />
+            ))}
+          <Background />
+          <Skills data={data} />
+          <Experience data={experiences} />
+          <Projects data={features} />
+          <Others data={others} />
+      </Layout>
+    </LazyLoad>
   )
 }
 
