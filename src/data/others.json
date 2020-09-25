@@ -15,9 +15,9 @@
     "used": [
         { "name": "Ionic" },
         { "name": "AngularJS" },
-        { "name": "Node.js" },
+        { "name": "PHP" },
         { "name": "MySQL" },
-        { "name": "Heroku" },
+        { "name": "Jira" },
         { "name": "Responsive Design" },
         { "name": "Microservice Architecture" }
     ]
